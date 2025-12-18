@@ -1,0 +1,23 @@
+name: Learning Ci/Cd Pipeline
+
+on:
+    push:
+        branches: [main]
+
+jobs:
+    build:
+        runs-on: Ubuntu-latest
+        steps:
+            - name: Checkout Code
+              uses: actions/checkout@v5
+         
+            - name: setup nodejs
+              uses: actions/setup-node@v3
+              with:
+                node-version: '16'
+
+            - name: install dependencies
+              run: npm install
+
+            - name: run tests
+              run: npm test

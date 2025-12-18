@@ -1,0 +1,21 @@
+{
+  "name": "learndevops",
+  "version": "1.0.0",
+  "description": "learn Ci/CD pipelines",
+  "homepage": "https://github.com/muhammedmarwan/LearnDevOps#readme",
+  "bugs": {
+    "url": "https://github.com/muhammedmarwan/LearnDevOps/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhammedmarwan/LearnDevOps.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "run" : "node index.js",
+    "test" : "node test.js" 
+  }
+}
